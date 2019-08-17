@@ -1,0 +1,57 @@
+<div class="container-fluid" *ngIf="!checkVisibility">
+  <div class="d-flex flex-wrap">
+    <h2>
+      All Slots &#40; Total {{totalSlot}} Slots&#41;
+    </h2>
+  </div>
+  <br />
+  <form name="form">
+    <div class="d-flex flex-wrap">
+      <h4>
+        First Half
+      </h4>
+    </div>
+    <div class="d-flex flex-wrap">
+      <div class="mr-2 mb-2" *ngFor="let slot of firstHalfSlotList; let i = index">
+        <input class="hideCheckBox" type="checkbox" id="{{slot.id}}" [checked]="slot.status === 3 || slot.status === 1"
+          (change)="setCancelSlot(slot)">
+        <label for="{{slot.id}}" class="btn"
+          [ngClass]="{'btn-outline-secondary': slot.status === 0, 'btn-danger': slot.status === 1, 'btn-secondary': slot.status === 3}">
+          {{slot.slotStartTime | shortTimeSlot}} - {{slot.slotEndTime | shortTimeSlot}}
+        </label>
+      </div>
+    </div>
+    <br />
+    <div class="d-flex flex-wrap">
+      <div class="mr-2 mb-2">
+        <button type="button" class="btn btn-outline-danger">
+          Break Time: {{slotAppointmentDetail?.breakStartTime | shortTimeSlot}}
+          to {{slotAppointmentDetail?.breakEndTime | shortTimeSlot}}
+        </button>
+      </div>
+    </div>
+    <br />
+    <div class="d-flex flex-wrap">
+      <h4>
+        Second Half
+      </h4>
+    </div>
+    <div class="d-flex flex-wrap">
+      <div class="mr-2 mb-2" *ngFor="let slot of secondHalfSlotList; let i = index">
+        <input class="hideCheckBox" type="checkbox" id="{{slot.id}}" [checked]="slot.status === 3 || slot.status === 1"
+          (change)="setSlotAppointment(i, slot)">
+        <label for="{{slot.id}}" class="btn"
+          [ngClass]="{'btn-outline-secondary': slot.status === 0, 'btn-danger': slot.status === 1, 'btn-secondary': slot.status === 3}">
+          {{slot.slotStartTime | shortTimeSlot}} - {{slot.slotEndTime | shortTimeSlot}}
+        </label>
+      </div>
+    </div>
+  </form>
+</div>
+
+
+<br />
+<div class="alert alert-danger" role="alert" *ngIf="checkVisibility">
+  You can choose only one functionality at a time either <strong>canDisable</strong> or
+  <strong>canCancelled</strong>...!!!
+</div>

@@ -1,0 +1,6 @@
+<roc-appointment-slot 
+    [canDisable]="canDisable" 
+    [canCancel]="canCancel"
+    [slotAppointmentDetail]="slotAppointment$ | async" 
+    (slotDetails)="saveSlotList($event)">
+</roc-appointment-slot>

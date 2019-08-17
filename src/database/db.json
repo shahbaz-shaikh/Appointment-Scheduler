@@ -1,0 +1,92 @@
+{
+    "slotAppoinmentDetails": {
+        "breakStartTime": "Mon, 01 Jan 2019 13:30:00",
+        "breakEndTime": "Mon, 01 Jan 2019 14:30:00",
+        "slotAppointmentList": [
+            {
+                "id": 1,
+                "status": 0,
+                "slotStartTime": "Mon, 01 Jan 2019 10:00:00",
+                "slotEndTime": "Mon, 01 Jan 2019 10:30:00"
+            },
+            {
+                "id": 2,
+                "status": 0,
+                "slotStartTime": "Mon, 01 Jan 2019 10:30:00",
+                "slotEndTime": "Mon, 01 Jan 2019 11:00:00"
+            },
+            {
+                "id": 3,
+                "status": 0,
+                "slotStartTime": "Mon, 01 Jan 2019 11:00:00",
+                "slotEndTime": "Mon, 01 Jan 2019 11:30:00"
+            },
+            {
+                "id": 4,
+                "status": 0,
+                "slotStartTime": "Mon, 01 Jan 2019 11:30:00",
+                "slotEndTime": "Mon, 01 Jan 2019 12:00:00"
+            },
+            {
+                "id": 5,
+                "status": 0,
+                "slotStartTime": "Mon, 01 Jan 2019 12:00:00",
+                "slotEndTime": "Mon, 01 Jan 2019 12:30:00"
+            },
+            {
+                "id": 6,
+                "status": 0,
+                "slotStartTime": "Mon, 01 Jan 2019 12:30:00",
+                "slotEndTime": "Mon, 01 Jan 2019 13:00:00"
+            },
+            {
+                "id": 7,
+                "status": 0,
+                "slotStartTime": "Mon, 01 Jan 2019 13:00:00",
+                "slotEndTime": "Mon, 01 Jan 2019 13:30:00"
+            },
+            {
+                "id": 8,
+                "status": 0,
+                "slotStartTime": "Mon, 01 Jan 2019 14:30:00",
+                "slotEndTime": "Mon, 01 Jan 2019 15:00:00"
+            },
+            {
+                "id": 9,
+                "status": 0,
+                "slotStartTime": "Mon, 01 Jan 2019 15:00:00",
+                "slotEndTime": "Mon, 01 Jan 2019 15:30:00"
+            },
+            {
+                "id": 10,
+                "status": 0,
+                "slotStartTime": "Mon, 01 Jan 2019 15:30:00",
+                "slotEndTime": "Mon, 01 Jan 2019 16:00:00"
+            },
+            {
+                "id": 11,
+                "status": 0,
+                "slotStartTime": "Mon, 01 Jan 2019 16:00:00",
+                "slotEndTime": "Mon, 01 Jan 2019 16:30:00"
+            },
+            {
+                "id": 12,
+                "status": 0,
+                "slotStartTime": "Mon, 01 Jan 2019 16:30:00",
+                "slotEndTime": "Mon, 01 Jan 2019 17:00:00"
+            },
+            {
+                "id": 13,
+                "status": 0,
+                "slotStartTime": "Mon, 01 Jan 2019 17:00:00",
+                "slotEndTime": "Mon, 01 Jan 2019 17:30:00"
+            },
+            {
+                "id": 14,
+                "status": 0,
+                "slotStartTime": "Mon, 01 Jan 2019 17:30:00",
+                "slotEndTime": "Mon, 01 Jan 2019 18:00:00"
+            }
+        ]
+    }
+}

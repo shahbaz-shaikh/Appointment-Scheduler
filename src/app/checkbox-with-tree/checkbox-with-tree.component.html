@@ -1,0 +1,24 @@
+<p>Group selects children</p>
+
+<form [formGroup]="cityForm" (ngSubmit)="selectOffice()">
+<button type="submit">Save</button> <br/><br/>
+<ng-select
+    placeholder="Select a City...!!!"
+    [items]="people"
+    [multiple]="true"
+    bindLabel="office"
+    groupBy="city"
+    [selectableGroup]="true"
+    [selectableGroupAsModel]="false"
+    [closeOnSelect]="false"
+    [clearSearchOnAdd]="true"
+    [searchFn]="customSearch"
+    formControlName="office">
+    <ng-template ng-optgroup-tmp let-item="item" let-item$="item$" let-index="index">
+        <input id="item-{{id}}" type="checkbox" [checked]="item$.selected"/> {{item.city | uppercase}}
+    </ng-template>
+    <ng-template ng-option-tmp let-item="item" let-item$="item$" let-index="index">
+        <input id="item-{{id}}" type="checkbox" [checked]="item$.selected"/> {{item.office}}
+</ng-template>
+</ng-select>
+</form>
